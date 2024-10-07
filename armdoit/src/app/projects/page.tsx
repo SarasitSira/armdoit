@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <div className="flex flex-col h-svh justify-center items-center align-middle">
