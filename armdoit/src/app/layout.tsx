@@ -6,13 +6,6 @@ import githubIcon from "../public/images/github.png";
 import linkedinIcon from "../public/images/linkedin.png";
 import youtubeIcon from "../public/images/youtube.png";
 
-if (typeof window !== "undefined") {
-  const userTheme = localStorage.getItem("theme");
-  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-}
-
 export const metadata = {
   title: "Arm Do It",
   description: "Website for Arm Do It by Arm Sarasit",
