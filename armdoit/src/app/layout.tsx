@@ -1,10 +1,10 @@
 import "./globals.css";
 import Image from "next/image";
 import asIcon from "./icon.ico";
-import emailIcon from "../public/images/email.png";
-import githubIcon from "../public/images/github.png";
-import linkedinIcon from "../public/images/linkedin.png";
-import youtubeIcon from "../public/images/youtube.png";
+import emailIcon from "../public/icons/email.png";
+import githubIcon from "../public/icons/github.png";
+import linkedinIcon from "../public/icons/linkedin.png";
+import youtubeIcon from "../public/icons/youtube.png";
 
 export const metadata = {
   title: "Arm Do It",
@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-quark bg-zinc-600 dark:text-gray-200 mb-auto h-screen">
+      <body className="font-quark bg-zinc-600 dark:text-gray-200 min-h-screen">
         {/* Header */}
-        <header className="flex items-center justify-start align-middle bg-gray-400/20 m-3 rounded-md h-fit">
+        <header className="flex items-center justify-start align-middle bg-gray-400/20 m-3 rounded-md min-h-[7.5vh]">
           <a href="/">
             <Image
               src={asIcon}
@@ -29,36 +29,36 @@ export default function RootLayout({
               sizes="100%"
               style={{
                 width: "auto",
-                height: "10vh",
+                height: "75px",
               }}
-              className="pr-2 pl-2 pb-2 pt-2"
+              className="m-5 hover:scale-110 transition-all duration-300 ease-linear"
             />
           </a>
-          <hr className="h-[7.5vh] mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
+          <hr className="h-11 mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
           <a
             href="/projects"
-            className="mx-4 text-[2vw] hover:font-bold hover:bg-white/20 hover:rounded-lg hover:pr-3 hover:pl-3 transition-all duration-200 ease-linear"
+            className="mx-4 text-[20px] hover:font-bold hover:scale-110 hover:bg-white/20 hover:rounded-md hover:pr-2 hover:pl-2 transition-all duration-200 ease-linear"
           >
             Projects
           </a>
-          <hr className="h-[7.5vh] mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
+          <hr className="h-11 mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
           <a
             href="/experiences"
-            className="mx-4 text-[2vw] hover:font-bold hover:bg-white/20 hover:rounded-lg hover:pr-3 hover:pl-3 transition-all duration-200 ease-linear"
+            className="mx-4 text-[20px] hover:font-bold hover:scale-110 hover:bg-white/20 hover:rounded-md hover:pr-2 hover:pl-2 transition-all duration-200 ease-linear"
           >
             Experiences
           </a>
-          <hr className="h-[7.5vh] mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
+          <hr className="h-11 mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
           <a
             href="/awards"
-            className="mx-4 text-[2vw] hover:font-bold hover:bg-white/20 hover:rounded-lg hover:pr-3 hover:pl-3 transition-all duration-200 ease-linear"
+            className="mx-4 text-[20px] hover:font-bold hover:scale-110 hover:bg-white/20 hover:rounded-md hover:pr-2 hover:pl-2 transition-all duration-200 ease-linear"
           >
             Awards
           </a>
-          <hr className="h-[7.5vh] mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
+          <hr className="h-11 mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
           <a
             href="/blogs"
-            className="mx-4 text-[2vw] hover:font-bold hover:bg-white/20 hover:rounded-lg hover:pr-3 hover:pl-3 transition-all duration-200 ease-linear"
+            className="mx-4 text-[20px] hover:font-bold hover:scale-110 hover:bg-white/20 hover:rounded-md hover:pr-2 hover:pl-2 transition-all duration-200 ease-linear"
           >
             Blogs
           </a>
@@ -66,8 +66,8 @@ export default function RootLayout({
         {/* Content */}
         {children}
         {/* Footer */}
-        <footer className="items-center bg-gray-400/20 pb-5 pt-2 h-fit mx-3 rounded-md">
-          <div className="flex space-x-10 items-center justify-center pt-3 pb-5">
+        <footer className="flex flex-col justify-center items-center align-middle bg-gray-400/20 m-3 rounded-md min-h-[20vh]">
+          <div className="flex space-x-10 items-center justify-center m-2">
             {/* Email Icon */}
             <a
               className="hover:bg-white/20 hover:fill-current rounded-lg transition-all duration-300 ease-linear"
@@ -81,9 +81,9 @@ export default function RootLayout({
                 sizes="100%"
                 style={{
                   width: "auto",
-                  height: "7.5vh",
+                  height: "25px",
                 }}
-                className="pr-2 pl-2 pb-2 pt-2"
+                className="m-1"
               />
             </a>
             {/* Github Icon */}
@@ -99,9 +99,9 @@ export default function RootLayout({
                 sizes="100%"
                 style={{
                   width: "auto",
-                  height: "7.5vh",
+                  height: "30px",
                 }}
-                className="pr-2 pl-2 pb-2 pt-2"
+                className="m-1"
               />
             </a>
             {/* LinkedIn Icon */}
@@ -117,9 +117,9 @@ export default function RootLayout({
                 sizes="100%"
                 style={{
                   width: "auto",
-                  height: "7.5vh",
+                  height: "30px",
                 }}
-                className="pr-2 pl-2 pb-2 pt-2"
+                className="m-1"
               />
             </a>
             {/* YouTube Icon */}
@@ -135,15 +135,15 @@ export default function RootLayout({
                 sizes="100%"
                 style={{
                   width: "auto",
-                  height: "7.5vh",
+                  height: "30px",
                 }}
-                className="pr-2 pl-2 pb-2 pt-2"
+                className="m-1"
               />
             </a>
           </div>
-          <hr className="h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700 w-[15vw]"></hr>
+          <hr className="h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700 m-2 w-[300px]"></hr>
           {/* Arm Do It Icon */}
-          <div className="flex flex-col items-center justify-center pt-3">
+          <div className="flex flex-col items-center justify-center m-2">
             <Image
               src={asIcon}
               alt="AS Icon"
@@ -151,11 +151,11 @@ export default function RootLayout({
               sizes="100%"
               style={{
                 width: "auto",
-                height: "5vh",
+                height: "25px",
               }}
-              className="pr-2 pl-2 pb-2 pt-2"
+              className="m-1"
             />
-            <p className="text-xs mb-1">
+            <p className="text-xs m-1">
               Website Self-Developed from the Ground Up
             </p>
             <p className="text-xs">© 2024 Sarasit Sirawattanakul</p>
