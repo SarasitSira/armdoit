@@ -50,7 +50,7 @@ export default function Home() {
       <div id="armdoit-intro">
         <div className="flex flex-col m-10">
           <p className="text-[50px] self-start font-bold">
-            Where Did "Arm Do It" Come From?
+            Where Did Arm Do It Come From?
           </p>
         </div>
       </div>
