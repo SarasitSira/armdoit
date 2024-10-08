@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         quark: ["Quark Light"],
       },
+      borderRadius: {
+        portrait: "50% 10% 50% 10%"
+      }
     },
   },
   plugins: [],

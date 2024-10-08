@@ -34,7 +34,7 @@ export default function RootLayout({
               className="m-5 hover:scale-110 transition-all duration-300 ease-linear"
             />
           </a>
-          <hr className="h-11 mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
+          <hr className="h-11 mr-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
           <a
             href="/projects"
             className="mx-4 text-[20px] hover:font-bold hover:scale-110 hover:bg-white/20 hover:rounded-md hover:pr-2 hover:pl-2 transition-all duration-200 ease-linear"
@@ -141,7 +141,7 @@ export default function RootLayout({
               />
             </a>
           </div>
-          <hr className="h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700 m-2 w-[300px]"></hr>
+          <hr className="h-1 mx-auto border-0 rounded bg-gray-700 m-2 w-[300px]"></hr>
           {/* Arm Do It Icon */}
           <div className="flex flex-col items-center justify-center m-2">
             <Image
