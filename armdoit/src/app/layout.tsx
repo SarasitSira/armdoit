@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-quark bg-zinc-600 dark:text-gray-200 min-h-screen">
         {/* Header */}
-        <header className="flex items-center justify-start align-middle bg-gray-400/20 m-3 rounded-md min-h-[7.5vh]">
+        <header className="flex items-center justify-start align-middle bg-gray-400/20 m-3 rounded-md w-auto min-h-[7.5vh]">
           <a href="/">
             <Image
               src={asIcon}
@@ -66,7 +66,7 @@ export default function RootLayout({
         {/* Content */}
         {children}
         {/* Footer */}
-        <footer className="flex flex-col justify-center items-center align-middle bg-gray-400/20 m-3 rounded-md min-h-[20vh]">
+        <footer className="flex flex-col justify-center items-center align-middle bg-gray-400/20 m-3 rounded-md w-auto min-h-[20vh]">
           <div className="flex space-x-10 items-center justify-center m-2">
             {/* Email Icon */}
             <a
