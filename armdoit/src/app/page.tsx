@@ -11,8 +11,9 @@ export default function Home() {
         <div className="flex flex-col h-fit m-5">
           <p className="text-[150px] self-center font-bold">Arm Sarasit</p>
           <hr className="h-1 mx-auto border-0 rounded-full bg-gray-700 w-[100%]" />
-          <p className="whitespace-nowrap text-[50px] self-center mt-12">
-            Welcome to My Personal Website and Portfolio
+          <p className="whitespace-nowrap text-[50px] self-center mt-12 text-center">
+            Welcome to My Personal Website and Portfolio<br/>
+            <span className="font-bold text-red-600">New Look Coming Soon!</span>
           </p>
         </div>
         <Image
@@ -27,7 +28,7 @@ export default function Home() {
           className="rounded-portrait self-center h-fit w-fit hover:scale-105 duration-150 ease-linear"
         />
       </div>
-      <div id="background">
+      {/* <div id="background">
         <div className="flex flex-col m-10">
           <p className="text-[50px] self-start font-bold">Background</p>
         </div>
@@ -53,7 +54,7 @@ export default function Home() {
             Where Did Arm Do It Come From?
           </p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
