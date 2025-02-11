@@ -6,5 +6,6 @@
   font-family: "Quark Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Quark Light"), url("../public/fonts/Quark-Light.woff") format("woff");
+  src: local("Quark Light"),
+    url("../public/fonts/Quark-Light.woff") format("woff");
 }

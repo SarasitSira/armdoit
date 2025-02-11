@@ -8,10 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      darkMode: "selector",
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        textcl: "#303030",
+        dark: "#404040",
+        base: "#969696",
+        light: "#DDDDDD"
       },
       fontFamily: {
         quark: ["Quark Light"],
