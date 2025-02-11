@@ -43,7 +43,7 @@ export default function RootLayout({
           </a>
           <hr className="h-11 mx-5 bg-gray-100 border-0 rounded dark:bg-gray-700 w-1"></hr>
           <a
-            href="/experiences"
+            href="https://armdoit.my.canva.site/experiences"
             className="mx-4 text-[20px] hover:font-bold hover:scale-110 hover:bg-white/20 hover:rounded-md hover:pr-2 hover:pl-2 transition-all duration-200 ease-linear"
           >
             Experiences
